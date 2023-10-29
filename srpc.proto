@@ -11,5 +11,10 @@ extend google.protobuf.ServiceOptions {
 
 extend google.protobuf.MethodOptions {
   optional uint32 method_option_id = 10002;
+  optional HttpRouteOptions method_option_http_api = 10003;
 }
 
+message HttpRouteOptions {
+  optional string get = 1;  // get path
+  optional string post = 2; // post path
+}
