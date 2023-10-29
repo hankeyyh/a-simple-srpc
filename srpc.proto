@@ -7,6 +7,7 @@ import "google/protobuf/descriptor.proto";
 
 extend google.protobuf.ServiceOptions {
   optional uint32 service_option_id = 10001;
+  optional string service_base_path = 10002; // url base path
 }
 
 extend google.protobuf.MethodOptions {
